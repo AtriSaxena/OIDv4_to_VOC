@@ -29,7 +29,7 @@ for fname in ids:
     myfile = os.path.join(args.dest_path,fname +'.xml')
     myfile = Path(myfile)
     if not myfile.exists(): #if file is not existing 
-        txtfile = os.path.join(args.sourcepath, 'label', fname + '.txt') #Read annotation of each image from txt file
+        txtfile = os.path.join(args.sourcepath, 'Label', fname + '.txt') #Read annotation of each image from txt file
         f = open(txtfile,"r")
         imgfile = os.path.join(args.sourcepath, fname +'.jpg')
         img = cv2.imread(imgfile, cv2.IMREAD_UNCHANGED) #Read image to get image width and height
