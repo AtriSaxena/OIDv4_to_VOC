@@ -1,5 +1,3 @@
 opencv-python
 pathlib
-os
-shutil
 argparse
